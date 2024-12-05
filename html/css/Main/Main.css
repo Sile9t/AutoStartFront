@@ -71,7 +71,7 @@
     font-style: normal;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     body {
         font-size: 12px !important;
     }
@@ -131,7 +131,7 @@
     }
 }
 
-@media screen and (min-width: 376) and (max-width: 744) {
+@media screen and (min-device-width: 376px) and (max-device-width: 744px) {
     body {
         font-size: 12px !important;
     }
@@ -187,13 +187,13 @@
             }
         }
     }
+} */
+
+@media screen and (min-width: 745px) and (max-width: 1024px) {
+
 }
 
-@media screen and (min-width: 745) and (max-width: 1024) {
-
-}
-
-@media screen and (min-width: 1025) {
+@media screen and (min-width: 1025px) {
 
 }
 
@@ -203,18 +203,22 @@ body {
     /* font-family: 'Pro Display Semibold', normal; */
     font-weight: 600;
     color: var(--grey-dark);
+    font-size: 14px !important;
 }
 
 header {
     .marqueue-wrapper {
-        border: 1px;
         background: var(--orange100);
+        padding: 5px 5% 5px 5%;
+        height: 44px;
+        border: 1px;
         justify-items: space-between;
         
         .yandex-map-rate-button {
             background-color: var(--white100);
-            padding: 6px 14px 6px 10px;
+            /* padding: 6px 14px 6px 10px; */
             align-items: center;
+            font-size: 14px;
             
             .yandex-map-icon {
                 height: 14px;
@@ -223,14 +227,14 @@ header {
             .yandex-map-rate {
 
             }
-            /* .yandex-map-text {
+            .yandex-map-text {
 
-            } */
+            }
         }
 
         .marqueue {
             color: var(--white100);
-            width: 90%;
+            /* width: 90%; */
             position: relative;
             /* overflow-x: hidden; */
             mask-image: linear-gradient(
@@ -264,17 +268,12 @@ header {
                 }
             }
 
-            a {
+            
+            .registration-button {
                 color: var(--grey-dark);
-
-                .registration-button {
-                    background: var(--white100);
-                    font-size: 12px;
-                    
-                    .registration-button-text {
-                        
-                    }
-                }
+                background: var(--white100);
+                font-size: 12px;
+                font-weight: 600;
             }
         }
     }
@@ -291,18 +290,27 @@ header {
     }
 
     .search-wrapper {
+        padding: 5px 5% 5px 5%;
+        height: 88px;
         .navigation-wrapper {
             .menu-button-wrapper {
                 .menu-button {
                     background-color: var(--orange100);
+                    font-weight: 400;
+                    height: 44px;
 
                     .menu-dots {
-                        width: 17px;
-                        height: 17px;
                     }
                     
                     .menu-text {
+                        font-size: 14px;
                         color: var(--white100);
+                    }
+
+                    .menu-button-counter {
+                        margin-top: 2px;
+                        font-weight: 400;
+                        background-color: var(--grey-dark);
                     }
                 }
             }
@@ -313,6 +321,7 @@ header {
                     color: var(--grey-text) !important;
                     border: 1px solid var(--stroke-search);
                     background-color: var(--white100);
+                    height: 44px;
 
                     .bi-search {
                         fill: var(--grey-text);
@@ -341,4 +350,115 @@ header {
             }
         }
     }
+}
+
+.main {
+    padding: 1rem 5% 1rem 5%;
+
+    .meeting-wrapper {
+        .tag-header-consult-wrapper {
+            width: 60%;
+            .tag-wrapper {
+                height: 40px;
+                flex-wrap: nowrap;
+                overflow-y: hidden scroll;
+            }
+
+            .header-wrapper {
+                color: black;
+                padding-bottom: 40px;
+                
+                H1 {
+                    
+                }
+            }
+
+            .consult-wrapper {
+                .ad-text {
+
+                }
+
+                form {
+                    .inputs-wrapper {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: var(--grey-text);
+                        .name-input {
+                            border-radius: 10px 0px 0px 10px;
+                            border: 1px solid var(--stroke-search);
+                            padding: 10px;
+                        }
+                        
+                        .phone-input {
+                            border-radius: 0px 10px 10px 0px;
+                            border: 1px solid var(--stroke-search);
+                            padding: 10px;
+                        }
+                    }
+
+                    button {
+                        background-color: var(--orange100);
+                        color: var(--white100);
+                        border-radius: 10px;
+                        margin-left: 6px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+
+                .form-notice {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--grey50);
+
+
+                    a {
+                        font-weight: 600;
+                        color: var(--grey50);    
+                    }
+                }
+            }
+        }
+
+        .video-wrapper {
+            width: 40%;
+            padding-left: 10%;
+
+            .video-card {
+
+            }
+
+            .video-tags-wrapper {
+
+            }
+        }
+    }
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.header-tag {
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 8px 0px 8px;
+    margin: 2px;
+    border: 1px solid #E9E9EA;
+    .icon {
+        height: 14px;
+        width: 11px;
+    }
+}
+
+.video-card {
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-tag {
+    background-color: var(--white30);
+    color: var(--white100);
+    padding: 5px;
+    margin: 2px;
 }

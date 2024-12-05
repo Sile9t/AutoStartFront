@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 12px !important;
+    }
+    
+    header {
+        .marqueue-wrapper {
+            .yandex-map-rate-button {
+                .yandex-map-text {
+                    display: none !important; 
+                }
+            }
+
+            .marqueue {
+                height: 30px;
+            }
+        }
+
+        
+        .online-registration {
+            .phone-number {
+                display: none;
+            }
+            
+            .registration-button {
+                display: none !important;
+            }
+        
+        }
+    
+        .search-wrapper {
+            .logo-wrapper{
+                .auto-start-logo{
+                }
+            }
+    
+            .menu-button-wrapper {
+                .menu-dots{
+                    width: 17px;
+                    height: 17px;
+                }
+                .menu-text {
+                    display: none !important;
+                }
+            }
+
+            .search-input-wrapper {
+                .bi-search {
+                    height: 17px;
+                    width: 17px;
+                }
+            }
+            
+            .nav-bar-wrapper {
+                display: none !important;
+            }
+        }
+    }
+}
