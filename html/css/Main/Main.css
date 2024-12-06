@@ -374,11 +374,14 @@ header {
                         width: 90%;
                         font-size: 90px;
                         font-weight: 600;
+                        letter-spacing: -3px;
                         
                         span {
-                            
+                            display: inline-block;
+                            font-size: 80px;
+                            line-height: 90px;
                             border-radius: 2rem;
-                            padding: 0px 5px 5px 5px;
+                            padding: 0px 10px 20px 10px;
                             background-color: var(--orange100);
                             color: var(--white100);
                             font-style: italic;
@@ -482,27 +485,3 @@ header {
     font-weight: 600;
 }
 
-/* .marqueue{
-    margin-top: 50px;
-    width: 90%;
-    position: relative;
-    height: 20px;
-    border: 1px solid black;
-}
-    .marqueue-item{
-        background-color: red;
-        height: 10px;
-        width: 100px;
-        left: 100%;
-        position: absolute;
-        animation-name: moveLeft;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-
-@keyframes moveLeft {
-    to {
-        left: -200;
-    } */
-/* } */
