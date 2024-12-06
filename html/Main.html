@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div class="marqueue-container flex-fill">
-                <div class="marqueue p-2">
+                <div class="marqueue d-flex justify-content-around p-2">
                     <div class="marqueue-item d-inline-flex">
                         <span>1-й маркетплес в сегменте люкс</span>
                     </div>
@@ -111,15 +111,20 @@
                     </div>
                     <div class="header-tag d-inline-flex rounded-pill align-content-center justify-content-between">
                         <div class="icon-wrapper">
-                            <img class="icon mx-1 mb-1" src="img\YandexMapIcon.png" alt=""/>
+                            <svg style="background-color: blue; padding: 2px; border-radius: 20px; margin: 0px 1px 1px 1px;" 
+                                xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                              </svg>
                         </div>
                         <div class="text d-inline ms-1">
-                            <span>авто за 10 лет</span>
+                            <span>15987 авто за 10 лет</span>
                         </div>
                     </div>
                     <div class="header-tag d-inline-flex rounded-pill align-content-center justify-content-between">
                         <div class="icon-wrapper">
-                            <img class="icon mx-1 mb-1" src="img\YandexMapIcon.png" alt=""/>
+                            <svg style="margin: 0px 1px 1px 1px" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                            </svg>
                         </div>
                         <div class="text d-inline ms-1">
                             <span>10 лет на рынке</span>
@@ -127,25 +132,31 @@
                     </div>
                     
                 </div>
-                <div class="header-consult-wrapper justify-content-between flex-fill">
-                    <div class="header-wrapper">
-                        <H1>Профессиональный ремонт <span><i>агрегатов ></i></span></H1>
+                <div class="header-consult-wrapper align-content-between flex-fill">
+                    <div class="header-wrapper align-content-center">
+                        <H1>Профессиональный ремонт <span>агрегатов ></span></H1>
                     </div>
                     <div class="consult-wrapper">
-                        <p class="ad-text">Срочный ремонт <span>от 1 часа</span></p>
+                        <p class="ad-text">Срочный ремонт 
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                                </svg> от 1 часа
+                            </span>
+                        </p>
                         <form action="" method="post" class="consult-input-wrapper d-flex flex-row">
                             <div class="inputs-wrapper d-flex flex-row">
                                 <input class="name-input" type="text" name="name" id="client-name" placeholder="Имя">
                                 <input class="phone-input" type="text" name="phone" id="client-phone" placeholder="+7">
                             </div>
-                            <button type="submit" class="btn">Косультация</button>
+                            <button type="submit" class="btn">Консультация</button>
                         </form>
                         <p class="form-notice">Отправляя форму вы соглащаетесь с <a href="">политикой обработки персональных данных</a></p>
                     </div>
                 </div>
             </div>
             <div class="video-wrapper position-relative">
-                <video class="video-card card" width="100%" autoplay muted>
+                <video class="video-card card" width="100%" autoplay muted loop>
                     <source src="./videos/Алиса.MP4" type="video/mp4">
                     <source src="" type="video/mp4">
                     Ваш браузер не поддерживает видео тег.
@@ -159,6 +170,14 @@
         </div>
         <div class="cards-wrapper">
 
+        </div>
+        <div class="marqueue">
+            <div class="marqueue-item marqueue-item-1"></div>
+            <div class="marqueue-item marqueue-item-2"></div>
+            <div class="marqueue-item marqueue-item-3"></div>
+            <div class="marqueue-item marqueue-item-4"></div>
+            <div class="marqueue-item marqueue-item-5"></div>
+            <div class="marqueue-item marqueue-item-6"></div>
         </div>
     </div>
     <footer>

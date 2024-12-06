@@ -235,7 +235,7 @@ header {
         .marqueue {
             color: var(--white100);
             /* width: 90%; */
-            position: relative;
+            /* position: relative; */
             /* overflow-x: hidden; */
             mask-image: linear-gradient(
                 to right,
@@ -246,12 +246,12 @@ header {
             );
 
             .marqueue-item {
-                position: absolute;
+                /* position: absolute;
                 left: 100%;
                 animation-name: marqueueAnim;
                 animation-duration: 30s;
                 animation-timing-function: linear;
-                animation-iteration-count: infinite;
+                animation-iteration-count: infinite; */
             }
         }
 
@@ -364,57 +364,73 @@ header {
                 overflow-y: hidden scroll;
             }
 
-            .header-wrapper {
-                color: black;
-                padding-bottom: 40px;
-                
-                H1 {
+            .header-consult-wrapper {
+
+                .header-wrapper {
+                    color: black;
+                    padding-bottom: 10%;
                     
-                }
-            }
-
-            .consult-wrapper {
-                .ad-text {
-
-                }
-
-                form {
-                    .inputs-wrapper {
-                        font-size: 14px;
-                        font-weight: 500;
-                        color: var(--grey-text);
-                        .name-input {
-                            border-radius: 10px 0px 0px 10px;
-                            border: 1px solid var(--stroke-search);
-                            padding: 10px;
-                        }
+                    H1 {
+                        width: 90%;
+                        font-size: 90px;
+                        font-weight: 600;
                         
-                        .phone-input {
-                            border-radius: 0px 10px 10px 0px;
-                            border: 1px solid var(--stroke-search);
-                            padding: 10px;
+                        span {
+                            
+                            border-radius: 2rem;
+                            padding: 0px 5px 5px 5px;
+                            background-color: var(--orange100);
+                            color: var(--white100);
+                            font-style: italic;
                         }
-                    }
-
-                    button {
-                        background-color: var(--orange100);
-                        color: var(--white100);
-                        border-radius: 10px;
-                        margin-left: 6px;
-                        font-size: 14px;
-                        font-weight: 600;
                     }
                 }
 
-                .form-notice {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: var(--grey50);
+                .consult-wrapper {
+                    .ad-text {
+                        span {
+                            color: var(--orange100);
+                        }
+                    }
+
+                    form {
+                        .inputs-wrapper {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: var(--grey-text);
+                            .name-input {
+                                border-radius: 10px 0px 0px 10px;
+                                border: 1px solid var(--stroke-search);
+                                padding: 10px;
+                            }
+                            
+                            .phone-input {
+                                border-radius: 0px 10px 10px 0px;
+                                border: 1px solid var(--stroke-search);
+                                padding: 10px;
+                            }
+                        }
+
+                        button {
+                            background-color: var(--orange100);
+                            color: var(--white100);
+                            border-radius: 10px;
+                            margin-left: 6px;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .form-notice {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--grey50);
 
 
-                    a {
-                        font-weight: 600;
-                        color: var(--grey50);    
+                        a {
+                            font-weight: 600;
+                            color: var(--grey50);    
+                        }
                     }
                 }
             }
@@ -461,4 +477,32 @@ header {
     color: var(--white100);
     padding: 5px;
     margin: 2px;
+    border: 1px --white100;
+    font-size: 20px;
+    font-weight: 600;
 }
+
+/* .marqueue{
+    margin-top: 50px;
+    width: 90%;
+    position: relative;
+    height: 20px;
+    border: 1px solid black;
+}
+    .marqueue-item{
+        background-color: red;
+        height: 10px;
+        width: 100px;
+        left: 100%;
+        position: absolute;
+        animation-name: moveLeft;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes moveLeft {
+    to {
+        left: -200;
+    } */
+/* } */
